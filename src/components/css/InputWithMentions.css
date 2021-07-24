@@ -1,0 +1,63 @@
+.InputContainer{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.InputContainer .pseudoInput{
+    position: relative;
+}
+
+.output{
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+    color: #735B5B;
+    border: 2px solid #735B5B;
+    background-color: white;
+    word-break: break-word; 
+}
+
+.mentionModal{
+    width: 50%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.userMention{
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.userMention:hover{
+    background-color: #FFEEDA;
+}
+
+.userMention.active{
+    background-color: #FFEEDA;
+}
+.userMention.active h3{
+    color: #E95924;
+}
+
+.userMention > div{
+    margin-left: 10px;
+}
+
+.userMention > div h3, p{
+    margin: 0;
+    color: #735B5B;
+}
+
+.userMention:hover h3{
+    color: #E95924;
+}
+
+.userMention > div p::before{
+    content: '@';
+}
